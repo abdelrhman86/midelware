@@ -9,6 +9,10 @@
 <body>
 
 <form action="insert.php" method= "post" >
+<select name="user_case" required>
+<option value="">Select your case</option>
+<option value="doner">doner</option>
+<option value="student">student</option>
 
 <label for="name"> The name: </label>
 
@@ -21,6 +25,10 @@
 <label for="credit-card"> Number of credit-card: </label>
 
 <input id="credit-card" name= "credit-card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+
+<select name="user_case" required style="display:none">
+<option value="student">student</option>
+</select>
 
 <label for="password"> password:</label>
 

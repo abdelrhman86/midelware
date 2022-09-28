@@ -10,13 +10,19 @@
 <form action="log.php" method="post">
 
        <input type="email" name="email">
-
+       
        <input type="password" name="password" >
 
-       <button name="login">login</button>
+       <select name="user_case">
+       <option value="">Select your case</option> 
+       <option value="doner">doner</option>
+       <option value="student">student</option>
+       </select>
+
+       <button name="login">Login</button>
 
        <p>Don't have account <a href="singup.php">Sing up</a></p>
-      <p> <a href="#"> Do you forget your password </a></p>
+<p> <a href="#"> Do you forget your password </a></p>
 
 </form>     
 </body>
